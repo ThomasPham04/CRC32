@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CRC32.srcs/sources_1/imports/CRC/proj_crc32_core.v" \
+"../../../../CRC32.srcs/sources_1/imports/CRC/proj_crc32_gen.v" \
+"../../../../CRC32.srcs/sources_1/imports/CRC/proj_crc32_in8.v" \
+"../../../../CRC32.srcs/sources_1/imports/CRC/proj_crc32_mon.v" \
+"../../../../CRC32.srcs/sim_1/imports/CRC/proj_crc32_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed May 14 14:53:33 2025
+# Process ID         : 4772
+# Current directory  : D:/BKU/VLSI Desgin/Digital Design/CRC32
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21096 D:\BKU\VLSI Desgin\Digital Design\CRC32\CRC32.xpr
+# Log file           : D:/BKU/VLSI Desgin/Digital Design/CRC32/vivado.log
+# Journal file       : D:/BKU/VLSI Desgin/Digital Design/CRC32\vivado.jou
+# Running On         : DESKTOP-T193F5Q
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics     
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33585 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35732 MB
+# Available Virtual  : 16297 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+import_files -norecurse {{D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_mon.v} {D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_core.v} {D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_gen.v} {D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_in8.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source proj_crc32_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v}}
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_gen.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_gen.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_in8.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_in8.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_mon.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_mon.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/L05_Group7/proj_crc32_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/L05_Group7/proj_crc32_tb.v}}

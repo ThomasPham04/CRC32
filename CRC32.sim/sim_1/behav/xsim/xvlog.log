@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_in8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_in8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_mon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_mon
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/CRC/proj_crc32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_tb

@@ -1,0 +1,135 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed May 14 14:53:33 2025
+# Process ID         : 4772
+# Current directory  : D:/BKU/VLSI Desgin/Digital Design/CRC32
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21096 D:\BKU\VLSI Desgin\Digital Design\CRC32\CRC32.xpr
+# Log file           : D:/BKU/VLSI Desgin/Digital Design/CRC32/vivado.log
+# Journal file       : D:/BKU/VLSI Desgin/Digital Design/CRC32\vivado.jou
+# Running On         : DESKTOP-T193F5Q
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics     
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33585 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35732 MB
+# Available Virtual  : 16297 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-91] Board repository path 'D:/Vivado_Board/vivado-boards/new/board_files/arty-z7-20/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Desgin/8-bit-RISC-Architecture-CPU/8-bit-RISC-CPU/Desgin/8-bit-RISC-Architecture-CPU/8-bit-RISC-CPU/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+open_project {D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.xpr}
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/Vivado_Board/vivado-boards/new/board_files/arty-z7-20/board_store/xilinx_board_store'.
+WARNING: [Project 1-1870] Given BoardPartRepoPath C:/Users/Nhat in the xpr file is empty or unreadable
+WARNING: [Project 1-1870] Given BoardPartRepoPath D:/BKU/VLSI in the xpr file is empty or unreadable
+WARNING: [Project 1-1870] Given BoardPartRepoPath C:/Users/Nhat in the xpr file is empty or unreadable
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Nhat Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Desgin/8-bit-RISC-Architecture-CPU/8-bit-RISC-CPU/Desgin/8-bit-RISC-Architecture-CPU/8-bit-RISC-CPU/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/Thuyen/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_gen.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_in8.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_mon.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/L05_Group7/proj_crc32_tb.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+import_files -norecurse {{D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_mon.v} {D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_core.v} {D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_gen.v} {D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_in8.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{D:/BKU/VLSI Desgin/Digital Design/CRC/proj_crc32_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'proj_crc32_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivado/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'proj_crc32_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj proj_crc32_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_in8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_in8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/CRC/proj_crc32_mon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_mon
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/CRC/proj_crc32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module proj_crc32_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot proj_crc32_tb_behav xil_defaultlib.proj_crc32_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot proj_crc32_tb_behav xil_defaultlib.proj_crc32_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.proj_crc32_in8
+Compiling module xil_defaultlib.proj_crc32_gen_default
+Compiling module xil_defaultlib.proj_crc32_mon_default
+Compiling module xil_defaultlib.proj_crc32_core_default
+Compiling module xil_defaultlib.proj_crc32_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot proj_crc32_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "proj_crc32_tb_behav -key {Behavioral:sim_1:Functional:proj_crc32_tb} -tclbatch {proj_crc32_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source proj_crc32_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'proj_crc32_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1139.520 ; gain = 11.992
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v}}
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v}}
+WARNING: [Vivado 12-818] No files matched 'D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_core.v'
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_gen.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_gen.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_in8.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_in8.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_mon.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sources_1/imports/L05_Group7/proj_crc32_mon.v}}
+export_ip_user_files -of_objects  [get_files {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/L05_Group7/proj_crc32_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/BKU/VLSI Desgin/Digital Design/CRC32/CRC32.srcs/sim_1/imports/L05_Group7/proj_crc32_tb.v}}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 15:08:04 2025...
