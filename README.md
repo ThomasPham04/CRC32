@@ -17,7 +17,7 @@
 
 | Feature | Description |
 |---------|-------------|
-| **CRC-32 Calculation** | Implements the standard CRC-32 polynomial for Ethernet (`x³² + x²⁶ + x²³ + ...`). |
+| **CRC-32 Calculation** | Implements the standard CRC-32 polynomial for Ethernet (`G(x)=x³²+x²⁶+x²³+x²²+x¹⁶+x¹²+x¹¹+x¹⁰+x⁸+x⁷+x⁵+x⁴+x²+x¹+x⁰`). |
 | **FCS Generation** | Appends 32-bit FCS to data frames. |
 | **FCS Verification** | Checks FCS integrity with error detection and match reporting. |
 | **Parameterized Design** | Configurable data width (`DAT_W`) and frame size (`NUM_W`). |
