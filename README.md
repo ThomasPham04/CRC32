@@ -1,13 +1,10 @@
-<p align="center">
-  <img src="https://via.placeholder.com/150?text=CRC32-Verilog" alt="CRC32-Verilog Logo" />
-</p>
 
 <h1 align="center">CRC32-Verilog 🚀</h1>
 
 <p align="center">
-  <a href="https://github.com/your-username/CRC32-Verilog"><img src="https://img.shields.io/github/license/your-username/CRC32-Verilog?color=blue" alt="License: MIT"></a>
-  <a href="https://github.com/your-username/CRC32-Verilog"><img src="https://img.shields.io/badge/Verilog-HDL-orange" alt="Verilog"></a>
-  <a href="https://github.com/your-username/CRC32-Verilog"><img src="https://img.shields.io/badge/Status-Active-green" alt="Status: Active"></a>
+  <a href="https://github.com/ThomasPham04/CRC32"><img src="https://img.shields.io/github/license/ThomasPham04/CRC32?color=blue" alt="License: MIT"></a>
+  <a href="https://github.com/ThomasPham04/CRC32"><img src="https://img.shields.io/badge/Verilog-HDL-orange" alt="Verilog"></a>
+  <a href="https://github.com/ThomasPham04/CRC32"><img src="https://img.shields.io/badge/Status-Active-green" alt="Status: Active"></a>
 </p>
 
 <p align="center">
@@ -45,32 +42,23 @@
 
 ---
 
-## 📥 Installation
+## 📥 Installation (Windows)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/CRC32-Verilog.git
+   git clone https://github.com/ThomasPham04/CRC32.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd CRC32-Verilog
+   cd CRC32
    ```
+3. Run the file CRC32.xpr in CRC32 directory (required: install Vivado):
+   ```bash
+    CRC32.xpr
+   ```
+4. In Vivado, open the Flow Navigator and select Run Simulation > Run Behavioral Simulation to see its behavior.
 
 ---
-
-## 🚀 Usage
-
-### Simulation
-1. Open your Verilog simulator.
-2. Compile all `.v` files with `proj_crc32_tb.v` as the top module.
-3. Run the simulation to check:
-   - `oerr_tb`: High if FCS is incorrect.
-   - `omatch_tb`: High if FCS matches (`0xc704dd7b`).
-4. Example for Icarus Verilog:
-   ```bash
-   iverilog -o crc32_tb proj_crc32_tb.v proj_crc32_core.v proj_crc32_gen.v proj_crc32_mon.v proj_crc32_in8.v
-   vvp crc32_tb
-   ```
 
 ### Customization
 - Edit parameters (`DAT_W`, `NUM_W`) in Verilog files for different data widths or frame sizes.
